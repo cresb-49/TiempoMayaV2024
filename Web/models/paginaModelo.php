@@ -28,16 +28,16 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 
 <body>
     <section id="inicio">
+    <video src="../img/background.mp4" autoplay="true" muted="true" loop="true"></video>
         <div id="inicioContainer" class="inicio-container">
 
             <?php echo "<h1>" . $pagina . " </h1>";
-            foreach ($secciones as $seccion) {
-                echo " <a href='#" . $seccion['seccion'] . "' class='btn-get-started'>" . $seccion['seccion'] . "</a>";
-            }
             ?>
+            <img class="imagenElemento3" alt="" src="../img/logonew3.png">
+            <img class="imagenElemento2" alt="" src="../img/flecha.png">
         </div>
     </section>
-
+    <br><br><br><br>
     <?php
 
 

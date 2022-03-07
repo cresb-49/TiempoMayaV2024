@@ -7,8 +7,8 @@ session_start(); ?>
 
 $conn = include '../conexion/conexion.php';
 $tabla = $_GET['elemento'];
-$table =strtolower($tabla);
-$datos = $conn->query("SELECT nombre,significado,htmlCodigo FROM tiempo_maya." . $table . ";");
+$table = strtolower($tabla);
+$datos = $conn->query("SELECT nombre,significado,htmlCodigo,imagen FROM tiempo_maya." . $table . ";");
 $elementos = $datos;
 $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nombre='" . $tabla . "';");
 
@@ -33,41 +33,43 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nom
 
 <body>
     <section id="inicio">
+        <video src="../img/background.mp4" autoplay="true" muted="true" loop="true"></video>
         <div id="inicioContainer" class="inicio-container">
-
             <?php echo "<h1>" . $tabla . " </h1>";
             ?>
-            <a href='#informacion' class='btn-get-started'>Informacion</a>
-            <a href='#elementos' class='btn-get-started'>Elementos</a>
+            <img class="imagenElemento3" alt="" src="../img/logonew3.png">
+            <img class="imagenElemento2" alt="" src="../img/flecha.png">
         </div>
     </section>
-    <section id="information">
-        <div class="container">
-            <div class="row about-container">
-                <div class="section-header">
-                    <h3 class="section-title">INFORMACION</h3>
+    <br><br><br><br>
+    <section id=" information">
+            <div class="container">
+                <div class="row about-container">
+                    <div class="section-header">
+                        <h3 class="section-title">INFORMACION</h3>
+                    </div>
+                    <?php foreach ($informacion as $info) {
+                        echo $info['htmlCodigo'];
+                    } ?>
                 </div>
-                <?php foreach($informacion as $info){
-                    echo $info['htmlCodigo'];
-                }?>
-            </div>
 
-        </div>
+            </div>
     </section>
     <hr>
-    
+
     <section id="elementos">
         <div class="container">
             <div class="row about-container">
                 <div class="section-header">
                     <h3 class="section-title">Elementos</h3>
                 </div>
-                <?php foreach($datos as $dato){
-                   $stringPrint = "<h4 id='".$dato['nombre']."'>".$dato['nombre']."</h4>";
-                   $stringPrint.="<h5>Significado</h5> <p>".$dato['significado']."</p>";
-                   $stringPrint.="<p>".$dato['htmlCodigo']."</p> <hr>";
-                   echo $stringPrint;
-                }?>
+                <?php foreach ($datos as $dato) {
+                    $stringPrint = "<h4 id='" . $dato['nombre'] . "'>" . $dato['nombre'] . "</h4>";
+                    $stringPrint .= "<h5>Significado</h5> <p>" . $dato['significado'] . "</p>";
+                    $stringPrint .= "<img class=\"imagenElemento\" alt=\"\" src='" . $dato['imagen'] . "'>";
+                    $stringPrint .= "<p>" . $dato['htmlCodigo'] . "</p> <hr>";
+                    echo $stringPrint;
+                } ?>
             </div>
 
         </div>
