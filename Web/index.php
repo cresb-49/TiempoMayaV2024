@@ -33,17 +33,16 @@ $cholquij = $nahual . " " . strval($energia);
   <?php include "NavBar.php" ?>
   <div>
     <section id="inicio">
-      <video src="./img/background.mp4" autoplay="true" muted="true" loop="true"></video>
       <div id="inicioContainer" class="inicio-container">
-        <br><br><br><br><br>
-        <h1><br><br>Tiempo Maya</h1><br><br>
-        <img alt="" src="./img/logonew2.png" width=185" height="160">
+        <h1>Tiempo Maya</h1>
+        <img alt="" src="./img/logonew3.png" height="160" style="margin-top: 2vh; margin-bottom: 2vh;">
         <h5 style="color: whitesmoke;font-size: 18px;">Calendario Haab : <?php echo isset($haab) ? $haab : ''; ?></h5>
         <h5 style="color: whitesmoke;font-size: 18px;">Calendario Cholquij : <?php echo isset($cholquij) ? $cholquij : ''; ?></h5>
         <h5 style="color: whitesmoke;font-size: 18px;">Cuenta Larga : <?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?></h5>
         <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
       </div>
     </section>
+
     <br><br><br><br>
     <section id="information">
       <div class="container">
@@ -63,11 +62,9 @@ $cholquij = $nahual . " " . strval($energia);
               interés acerca de la cultura maya y las herramientas que nos brindan nos ayudan a tener una mejor
               interacción con el usuario, así como puede llegar hacer un canal de comunicación y construcción del
               conocimiento con otros interesados. </p>
-            <img alt="" src="./img/logonew3.png" width="185" height="160">
             <a href="https://srlabs.a2hosted.com/rs-humhub/index.php?r=wiki%2Fpage%2Fview&title=Proyecto+Tiempo+Maya&cguid=03ab5d70-702f-4844-a654-5f47fd6a1f61">
-              <img alt="" src="./img/srlabs.png" width="400" height="160">
+              <img alt="" src="./img/srlabs.png" height="100">
             </a>
-            <img alt="" src="./img/logonew3.png" width="185" height="160">
           </div>
         </div>
       </div>

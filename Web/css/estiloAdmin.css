@@ -1,6 +1,6 @@
 
 .dropdown-menu a {
-  color: #2dc997;
+  color: #c9592d;
 }
 
 
@@ -37,7 +37,7 @@ background-color: transparent;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2dc997;
+  background-color: #c9592d;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -84,8 +84,8 @@ background-color: transparent;
 }
 
 .btn-get-started1:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #c9592d;
+  border: 2px solid #c9592d;
   color: #fff;
 }
 

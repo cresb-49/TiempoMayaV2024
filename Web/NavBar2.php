@@ -11,11 +11,11 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
 <?php include "../mensaje.php"; ?>
 <div style="position:fixed;z-index:991; top:7px; left:80px;">
   <a href="../index.php">
-    <img alt="" src="../img/logonew.gif" width=160" height="160">
+    <img alt="" src="../img/logonew.png" height="150">
   </a>
 </div>
 
-<header id="header" style="padding-left: 600px;">
+<header class="header">
   <div class="container">
     <nav class="navbar navbar-expand-lg" id="nav-menu-container">
       <div class="container-fluid">
@@ -104,9 +104,11 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
             <li class="nav-item">
               <a class="nav-link" href="../models/paginaModelo.php?pagina=Rueda Calendarica" style="color: white;font-size: 17px;">Rueda Calendarica</a>
             </li>
-            
+
             <li class="nav-item"><a class="nav-link" href="../calculadora.php" style="color: white;font-size: 17px;">Calculadora</a></li>
-           
+            <li class="nav-item"><a class="nav-link" href="../cruzMaya.php" style="color: white;font-size: 17px;">Cruz Maya</a></li>
+            <li class="nav-item"><a class="nav-link" href="../gregomaya.php" style="color: white;font-size: 17px;">Calendario GregoMaya</a></li>
+
           </ul>
         </div>
       </div>

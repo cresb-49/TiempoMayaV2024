@@ -1,0 +1,301 @@
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* Asegura columnas de igual ancho */
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #1f1f1f;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #c9592d;
+    /* Semi-transparente */
+}
+
+.calendar caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-day {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio debajo de cada día para separación */
+}
+
+.images-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten según el ancho del contenedor */
+}
+
+.maya_cal, .maya_num {
+    margin: 5px; /* Espacio debajo de las imágenes */
+    width: 40px; /* Ancho fijo para cada imagen, ajusta según necesites */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.maya_num {
+    transform: rotate(-90deg); /* Rotar 90 grados a la izquierda */
+    width: 30px; /* Ancho fijo para cada imagen, ajusta según necesites */
+    object-fit: scale-down; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.text-below {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    margin-top: 5px; /* Espacio entre imágenes y texto */
+}
+
+.text-up {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    margin-bottom: 2%; /* Espacio entre imágenes y texto */
+}
+
+.calendar-container{
+    /* Agregar un espacio al extremo derecho e izquierdo del contenedor */
+    padding: 0 2%;
+}
+
+.selector-fecha select, .selector-fecha button {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+    border: 1px solid #666; /* Borde sutil */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Margen externo */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto */
+}
+
+.selector-fecha select:hover, .selector-fecha button:hover {
+    background-color: #555; /* Cambio de color al pasar el mouse */
+}
+
+.selector-fecha button {
+    cursor: pointer; /* Cursor en forma de mano para indicar que es clickeable */
+}
+
+/* Estilo adicional para el formulario y su contenedor */
+.selector-fecha {
+    display: flex; /* Alineación en línea */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Ajustar el tamaño de los selectores si es necesario */
+.selector-fecha select {
+    width: auto; /* O ajusta según el espacio disponible */
+}
+
+/* Estilo del botón 'Calcular' */
+.selector-fecha button {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.contenedor_info {
+    transform: scale(1);
+    /* Escala el div y su contenido al 50% */
+    transform-origin: center;
+    /* Escala desde la esquina superior izquierda */
+}
+
+.contenedor_formulario {
+    background: rgba(63, 64, 66, 0.7);
+    transition: 0.5s;
+    width: 90%;
+    height: auto;
+    /* Permite que la altura sea dinámica */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio {
+    width: 100%;
+    height: 150vh;
+    background: url(../img/fondo.png) top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .inicio {
+        background-attachment: fixed;
+    }
+}
+
+.inicio:before {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+}
+
+.inicio .inicio-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.inicio h1 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.inicio h2 {
+    color: #eee;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .inicio h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+.inicio .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.inicio .btn-get-started:hover {
+    background: #c9592d;
+    border: 2px solid #c9592d;
+    color: #fff;
+}
+
+@media (max-width: 994px) {
+    .inicio .btn-get-started {
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 6px;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+}
+
+
+/* Estilos específicos para pantallas menores o iguales a 768px */
+@media (max-width: 730px) {
+    .inicio{
+        height: 250vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+    .maya_cal, .maya_num {
+        width: 20px;
+    }
+    .text-below{
+        font-size: 12px;
+    }
+}
+
+/* Consulta de medios para pantallas medianas (tabletas) */
+@media (min-width: 730px) and (max-width: 800px) {
+    .inicio{
+        height: 270vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+
+/* Consulta de medios para pantallas medianas (tabletas) */
+@media (min-width: 800px) and (max-width: 1200px) {
+    .inicio{
+        height: 270vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .inicio{
+        height: 220vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1400px)  and (max-width: 1429px) {
+    .inicio{
+        height: 220vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1429px) {
+    .inicio{
+        height: 170vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+
+.custom-tooltip .tooltip-inner {
+    background-color: #555; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+.custom-tooltip .arrow::before {
+    border-top-color: #555; /* Color de la flecha */
+}
