@@ -93,7 +93,7 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
                                             </p>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td style="background: linear-gradient(to right, blue, green);">
                                         <div class="espacio_cruz">
                                             <div class="images-container">
                                                 <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_dia_imagen; ?>.png" alt="Maya 1">
@@ -109,7 +109,7 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
                                             <div class="images-container">
                                                 <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_concepcion_imagen; ?>.png" alt="Maya 1">
                                             </div>
-                                            <p style="color: black;"><?php echo $nahual_concepcion; ?></p>
+                                            <p class="texto_cardinal"><?php echo $nahual_concepcion; ?></p>
                                         </div>
                                     </td>
                                 </tr>
