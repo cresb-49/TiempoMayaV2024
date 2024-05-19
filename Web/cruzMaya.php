@@ -48,8 +48,8 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
 
     <?php include "NavBar.php" ?>
     <div>
-        <section id="inicio" style="height: 195vh;">
-            <div id="inicioContainer" class="inicio-container">
+        <section class="inicio">
+            <div class="inicio-container">
 
                 <div class="contenedor_formulario">
                     <h1>CRUZ MAYA</h1>

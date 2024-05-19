@@ -113,7 +113,7 @@
 /* Consulta de medios para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 768px) {
     .contenedor_info {
-        transform: scale(0.90);
+        transform: scale(0.80);
         /* Escala el div y su contenido al 50% */
         transform-origin: top center;
         /* Escala desde la parte superior central */
@@ -139,3 +139,156 @@
         /* Ajusta el ancho del formulario en pantallas medianas */
     }
 }
+
+.inicio {
+    width: 100%;
+    height: 195vh;
+    background: url(../img/fondo.png) top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .inicio {
+        background-attachment: fixed;
+    }
+}
+
+.inicio:before {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+}
+
+.inicio .inicio-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.inicio h1 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    to {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.inicio h2 {
+    color: #eee;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .inicio h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+.inicio .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.inicio .btn-get-started:hover {
+    background: #c9592d;
+    border: 2px solid #c9592d;
+    color: #fff;
+}
+
+@media (max-width: 994px) {
+    .inicio .btn-get-started {
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 6px;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+}
+
+/* Estilos específicos para pantallas menores o iguales a 768px */
+@media (max-width: 730px) {
+    .inicio{
+        height: 242vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+
+/* Consulta de medios para pantallas medianas (tabletas) */
+@media (min-width: 730px) and (max-width: 800px) {
+    .inicio{
+        height: 210vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+
+/* Consulta de medios para pantallas medianas (tabletas) */
+@media (min-width: 800px) and (max-width: 1200px) {
+    .inicio{
+        height: 200vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .inicio{
+        height: 200vh;
+    }
+    .inicio h1{
+        font-size: 40px;
+    }
+}
+

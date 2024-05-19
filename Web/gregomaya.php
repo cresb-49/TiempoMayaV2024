@@ -60,9 +60,9 @@ foreach (new DatePeriod($inicioMes, new DateInterval('P1D'), $finMes) as $fecha)
     <?php include "NavBar.php" ?>
 
     <div>
-        <section id="inicio" style="height: 140vh;">
-            <div id="inicioContainer" class="inicio-container">
-                <div id='formulario2'>
+        <section class="inicio">
+            <div class="inicio-container">
+                <div class='contenedor_formulario'>
                     <?php
                     // Configura el locale a Español
                     setlocale(LC_TIME, 'es_ES.UTF-8', 'Spanish_Spain.1252');
@@ -92,24 +92,26 @@ foreach (new DatePeriod($inicioMes, new DateInterval('P1D'), $finMes) as $fecha)
                             </select>
                         </form>
                     </div>
-                    <div class="calendar-container">
-                        <table class="calendar">
-                            <caption></caption>
-                            <thead>
-                                <tr>
-                                    <th>Dom.</th>
-                                    <th>Lun.</th>
-                                    <th>Mar.</th>
-                                    <th>Mie.</th>
-                                    <th>Jue.</th>
-                                    <th>Vie.</th>
-                                    <th>Sab.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Los días del calendario serán generados por JavaScript -->
-                            </tbody>
-                        </table>
+                    <div class="contenedor_info">
+                        <div class="calendar-container">
+                            <table class="calendar">
+                                <caption></caption>
+                                <thead>
+                                    <tr>
+                                        <th>Dom.</th>
+                                        <th>Lun.</th>
+                                        <th>Mar.</th>
+                                        <th>Mie.</th>
+                                        <th>Jue.</th>
+                                        <th>Vie.</th>
+                                        <th>Sab.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Los días del calendario serán generados por JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,7 +125,7 @@ foreach (new DatePeriod($inicioMes, new DateInterval('P1D'), $finMes) as $fecha)
 
     <script>
         // Datos de los días del mes
-        const diasMes = <?php echo json_encode($diasMes); ?>;        
+        const diasMes = <?php echo json_encode($diasMes); ?>;
     </script>
     <script src="js/calendario.js"></script>
 

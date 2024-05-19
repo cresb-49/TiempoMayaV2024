@@ -41,8 +41,8 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
 
     <?php include "NavBar.php" ?>
     <div>
-        <section id="inicio" class="fix_inicio_calculadora" style="height: 170vh;">
-            <div id="inicioContainer" class="inicio-container">
+        <section class="inicio" >
+            <div class="inicio-container">
 
                 <div class='contenedor_formulario'>
                     <h1>Calculadora</h1>
