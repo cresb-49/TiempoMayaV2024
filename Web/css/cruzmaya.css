@@ -91,3 +91,51 @@
     padding-right: 3px;
     border-radius: 5px;
 }
+
+.contenedor_info {
+    transform: scale(1);
+    /* Escala el div y su contenido al 50% */
+    transform-origin: center;
+    /* Escala desde la esquina superior izquierda */
+}
+
+.contenedor_formulario {
+    background: rgba(63, 64, 66, 0.7);
+    transition: 0.5s;
+    width: 50%;
+    height: auto;
+    /* Permite que la altura sea dinámica */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Consulta de medios para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .contenedor_info {
+        transform: scale(0.90);
+        /* Escala el div y su contenido al 50% */
+        transform-origin: top center;
+        /* Escala desde la parte superior central */
+    }
+
+    .contenedor_formulario {
+        width: 80%;
+        /* Ajusta el ancho del formulario en pantallas pequeñas */
+    }
+}
+
+/* Consulta de medios para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor_info {
+        transform: scale(0.90);
+        /* Escala el div y su contenido al 75% */
+        transform-origin: top center;
+        /* Escala desde la parte superior central */
+    }
+
+    .contenedor_formulario {
+        width: 60%;
+        /* Ajusta el ancho del formulario en pantallas medianas */
+    }
+}

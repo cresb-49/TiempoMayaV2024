@@ -44,7 +44,7 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
         <section id="inicio" class="fix_inicio_calculadora" style="height: 170vh;">
             <div id="inicioContainer" class="inicio-container">
 
-                <div id='formulario'>
+                <div class='contenedor_formulario'>
                     <h1>Calculadora</h1>
                     <form action="#" method="GET">
                         <div class="mb-1">
@@ -100,72 +100,74 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
                     $cholquij_nombre = strtolower($cholquij_nombre);
                     $cholquij_numero = $cholquij_array[1];
                     ?>
-                    <div class="contenedor_estela" style="display:flex; justify-content: center;">
-                        <div class="estela" style="padding: 10px;">
-                            <table class="maya-table">
-                                <tr>
-                                    <td colspan="2">
-                                        <div class="images-container">
-                                            <img style="width: 400px; height: auto; object-fit: scale-down;" src="img/cuenta_larga/principal.png" alt="Superior Maya">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[0] ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/cuenta_larga/baktun.png" alt="Maya 1">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[1] ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/cuenta_larga/katun.png" alt="Maya 2">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[2] ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/cuenta_larga/tun.png" alt="Maya 1">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[3] ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/cuenta_larga/unial.png" alt="Maya 2">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[4] ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/cuenta_larga/kin.png" alt="Maya 1">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $cholquij_numero ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/nahuales/<?php echo $cholquij_nombre ?>.png" alt="Maya 2">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_num" src="img/numeros/<?php echo $haab_numero ?>.png" alt="Descripción">
-                                            <img class="maya_cal" src="img/uinales/<?php echo $haab_nombre ?>.png" alt="Maya 2">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="images-container">
-                                            <img class="maya_cal" src="img/cuenta_larga/g<?php echo $senor_noche ?>.png" alt="Maya 2">
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
+                    <div class="contenedor_info">
+                        <div class="contenedor_estela" style="display:flex; justify-content: center;">
+                            <div class="estela" style="padding: 10px;">
+                                <table class="maya-table">
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="images-container">
+                                                <img style="width: 400px; height: auto; object-fit: scale-down;" src="img/cuenta_larga/principal.png" alt="Superior Maya">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[0] ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/cuenta_larga/baktun.png" alt="Maya 1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[1] ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/cuenta_larga/katun.png" alt="Maya 2">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[2] ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/cuenta_larga/tun.png" alt="Maya 1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[3] ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/cuenta_larga/unial.png" alt="Maya 2">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[4] ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/cuenta_larga/kin.png" alt="Maya 1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cholquij_numero ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/nahuales/<?php echo $cholquij_nombre ?>.png" alt="Maya 2">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $haab_numero ?>.png" alt="Descripción">
+                                                <img class="maya_cal" src="img/uinales/<?php echo $haab_nombre ?>.png" alt="Maya 2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/cuenta_larga/g<?php echo $senor_noche ?>.png" alt="Maya 2">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
