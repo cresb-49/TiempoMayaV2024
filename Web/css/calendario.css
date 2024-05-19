@@ -35,8 +35,7 @@
 }
 
 .maya_cal, .maya_num {
-    margin-right: 5px; /* Espacio entre imágenes */
-    margin-bottom: 5px; /* Espacio debajo de las imágenes */
+    margin: 5px; /* Espacio debajo de las imágenes */
     width: 40px; /* Ancho fijo para cada imagen, ajusta según necesites */
     height: auto; /* Altura automática para mantener la proporción */
 }
@@ -51,6 +50,12 @@
     width: 100%; /* Ocupa todo el ancho disponible */
     text-align: center; /* Centra el texto debajo de las imágenes */
     margin-top: 5px; /* Espacio entre imágenes y texto */
+}
+
+.text-up {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    margin-bottom: 2%; /* Espacio entre imágenes y texto */
 }
 
 .calendar-container{
@@ -227,17 +232,23 @@
 /* Estilos específicos para pantallas menores o iguales a 768px */
 @media (max-width: 730px) {
     .inicio{
-        height: 280vh;
+        height: 250vh;
     }
     .inicio h1{
         font-size: 30px;
+    }
+    .maya_cal, .maya_num {
+        width: 20px;
+    }
+    .text-below{
+        font-size: 12px;
     }
 }
 
 /* Consulta de medios para pantallas medianas (tabletas) */
 @media (min-width: 730px) and (max-width: 800px) {
     .inicio{
-        height: 220vh;
+        height: 270vh;
     }
     .inicio h1{
         font-size: 30px;
@@ -247,7 +258,7 @@
 /* Consulta de medios para pantallas medianas (tabletas) */
 @media (min-width: 800px) and (max-width: 1200px) {
     .inicio{
-        height: 195vh;
+        height: 270vh;
     }
     .inicio h1{
         font-size: 30px;
@@ -256,7 +267,23 @@
 
 @media (min-width: 1200px) and (max-width: 1400px) {
     .inicio{
-        height: 180vh;
+        height: 220vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1400px)  and (max-width: 1429px) {
+    .inicio{
+        height: 220vh;
+    }
+    .inicio h1{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1429px) {
+    .inicio{
+        height: 170vh;
     }
     .inicio h1{
         font-size: 30px;

@@ -47,7 +47,8 @@ function createCalendar(calendar, year, month) {
         // Agregamos la imagen y el texto
         cell.innerHTML = `
         <div class="calendar-day">
-            <div class="text-below">${day}</div>
+        <div class="text-up">${day}</div>
+        <br>
             <div class="images-container">
                 <img class="maya_num" src="img/numeros/${cholquij_numero}.png" alt="Descripción">
                 <img class="maya_cal" src="img/nahuales_alterno/${cholquij_imagen}.png" alt="Descripción">
