@@ -10,7 +10,6 @@ if (isset($_GET['fecha'])) {
 }
 
 $nahual = include 'backend/buscar/conseguir_cruz_maya_dia.php';
-print_r($nahual);
 $nahual_dia = $nahual['nombre'];
 $nahual_dia_imagen =  preg_replace('/[^a-zA-Z]/', '', $nahual_dia);
 $nahual_dia_imagen = strtolower($nahual_dia_imagen);
@@ -42,18 +41,18 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
     <?php include "blocks/bloquesCss.html" ?>
     <link rel="stylesheet" href="css/estilo.css?v=<?php echo (rand()); ?>" />
     <link rel="stylesheet" href="css/calculadora.css?v=<?php echo (rand()); ?>" />
-    <link rel="stylesheet" href="css/cuentaLarga.css" />
+    <link rel="stylesheet" href="css/cruzmaya.css" />
 </head>
 
 <body>
 
     <?php include "NavBar.php" ?>
     <div>
-        <section id="inicio" class="fix_inicio_calculadora" style="height: 170vh;">
+        <section id="inicio" class="fix_inicio_calculadora" style="height: 195vh;">
             <div id="inicioContainer" class="inicio-container">
 
                 <div id='formulario'>
-                    <h1>Calculadora</h1>
+                    <h1>CRUZ MAYA</h1>
                     <form action="#" method="GET">
                         <div class="mb-1">
                             <label for="fecha" class="form-label">Fecha</label>
@@ -66,61 +65,64 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
                         <div class="estela" style="padding: 10px;">
                             <table class="maya-table">
                                 <tr>
-                                    <td colspan="3">
-                                        <div class="images-container">
-                                            <h2>Cruz</h2>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td>
                                     </td>
-                                    <td>
-                                        <div class="images-container">
-                                            <h5>Concepcion</h5>
-                                            <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_concepcion_imagen; ?>.png" alt="Maya 1">
-                                            <p><?php echo $nahual_concepcion; ?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="images-container">
-                                            <h5>Mano Derecha</h5>
-                                            <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_derecho_imagen; ?>.png" alt="Maya 1">
-                                            <p>
+                                    <td style="background-color: red;">
+                                        <div class="espacio_cruz">
+                                            <h5 class="titulo_texto_cardinal">ESTE</h5>
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_derecho_imagen; ?>.png" alt="Maya 1">
+                                            </div>
+                                            <p class="texto_cardinal">
                                                 <?php echo $nahual_derecho; ?>
                                             </p>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="images-container">
-                                            <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_dia_imagen; ?>.png" alt="Maya 1">
-                                            <p>
-                                                <?php echo $nahual_dia; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: white;">
+                                        <div class="espacio_cruz">
+                                            <h5 class="titulo_texto_cardinal">NORTE</h5>
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_destino_imagen; ?>.png" alt="Maya 1">
+                                            </div>
+                                            <p class="texto_cardinal">
+                                                <?php echo $nahual_destino; ?>
                                             </p>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="images-container">
-                                            <h5>Mano Izquierda</h5>
-                                            <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_izquierdo_imagen; ?>.png" alt="Maya 1">
-                                            <p>
-                                                <?php echo $nahual_izquierdo; ?>
+                                        <div class="espacio_cruz">
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_dia_imagen; ?>.png" alt="Maya 1">
+                                            </div>
+                                            <p class="texto_cardinal">
+                                                <?php echo $nahual_dia; ?>
                                             </p>
+                                        </div>
+                                    </td>
+                                    <td style="background-color: yellow;">
+                                        <div class="espacio_cruz">
+                                            <h5 class="titulo_texto_cardinal">SUR</h5>
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_concepcion_imagen; ?>.png" alt="Maya 1">
+                                            </div>
+                                            <p style="color: black;"><?php echo $nahual_concepcion; ?></p>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>
-                                        <div class="images-container">
-                                            <h5>Destino</h5>
-                                            <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_destino_imagen; ?>.png" alt="Maya 1">
-                                            <p>
-                                                <?php echo $nahual_destino; ?>
+                                    <td style="background-color: black;">
+                                        <div class="espacio_cruz">
+                                            <h5 class="titulo_texto_cardinal">OESTE</h5>
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/nahuales_alterno/<?php echo $nahual_izquierdo_imagen; ?>.png" alt="Maya 1">
+                                            </div>
+                                            <p class="texto_cardinal">
+                                                <?php echo $nahual_izquierdo; ?>
                                             </p>
                                         </div>
                                     </td>
@@ -131,20 +133,20 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
                         </div>
                     </div>
                     <div class="contenedor_descripcion">
-                        <h2>Concepcion</h2>
-                        <p>
+                        <h2 style="color:#c9592d">Concepcion</h2>
+                        <p class="texto_cruz">
                             <?php echo $nahual_concepcion_descripcion; ?>
                         </p>
-                        <h2>Mano Derecha</h2>
-                        <p>
+                        <h2 style="color:#c9592d">Mano Derecha</h2>
+                        <p class="texto_cruz">
                             <?php echo $nahual_derecho_descripcion; ?>
                         </p>
-                        <h2>Mano Izquierda</h2>
-                        <p>
+                        <h2 style="color:#c9592d">Mano Izquierda</h2>
+                        <p class="texto_cruz">
                             <?php echo $nahual_izquierdo_descripcion; ?>
                         </p>
-                        <h2>Destino</h2>
-                        <p>
+                        <h2 style="color:#c9592d">Destino</h2>
+                        <p class="texto_cruz">
                             <?php echo $nahual_destino_descripcion; ?>
                         </p>
                     </div>

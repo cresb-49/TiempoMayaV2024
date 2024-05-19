@@ -1,0 +1,94 @@
+.images-container {
+    display: flex;
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que las imágenes se ajusten según el ancho del contenedor */
+}
+
+.maya_cal,
+.maya_num {
+    margin-right: 5px;
+    /* Espacio entre imágenes */
+    margin-bottom: 5px;
+    /* Espacio debajo de las imágenes */
+    width: 100px;
+    /* Ancho fijo para cada imagen, ajusta según necesites */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+.maya_num {
+    transform: rotate(-90deg);
+    /* Rotar 90 grados a la izquierda */
+    width: 80px;
+    /* Ancho fijo para cada imagen, ajusta según necesites */
+    object-fit: scale-down;
+    /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.maya_pri {
+    width: 400px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.estela {
+    border-radius: 2vh;
+    margin-bottom: 20px;
+    background-image: url('../img/fondo_estela.jpg');
+    /* Ruta a tu imagen */
+    background-size: cover;
+    /* Hace que la imagen cubra todo el div */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+}
+
+.contenedor_estela {
+    display: flex;
+    justify-content: center;
+}
+
+.espacio_cruz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+.contenedor_descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_descripcion h5 {
+    color: #c9592d;
+}
+
+.texto_cruz {
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.texto_cardinal {
+    background-color: white;
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+}
+
+.titulo_texto_cardinal {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+}
