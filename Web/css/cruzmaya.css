@@ -36,7 +36,6 @@
 .estela {
     border-radius: 2vh;
     margin-bottom: 20px;
-    background-image: url('../img/fondo_estela.jpg');
     /* Ruta a tu imagen */
     background-size: cover;
     /* Hace que la imagen cubra todo el div */
