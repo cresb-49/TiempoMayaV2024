@@ -133,19 +133,19 @@ $nahual_izquierdo_descripcion = $nahual['descripcionIzquierdo'];
                         </div>
                     </div>
                     <div class="contenedor_descripcion">
-                        <h2 style="color:#c9592d">Concepcion</h2>
+                        <h2 style="color:#c9592d">SUR (Concepcion)</h2>
                         <p class="texto_cruz">
                             <?php echo $nahual_concepcion_descripcion; ?>
                         </p>
-                        <h2 style="color:#c9592d">Mano Derecha</h2>
+                        <h2 style="color:#c9592d">ESTE (Mano Derecha)</h2>
                         <p class="texto_cruz">
                             <?php echo $nahual_derecho_descripcion; ?>
                         </p>
-                        <h2 style="color:#c9592d">Mano Izquierda</h2>
+                        <h2 style="color:#c9592d">OESTE (Mano Izquierda)</h2>
                         <p class="texto_cruz">
                             <?php echo $nahual_izquierdo_descripcion; ?>
                         </p>
-                        <h2 style="color:#c9592d">Destino</h2>
+                        <h2 style="color:#c9592d">NORTE (Destino)</h2>
                         <p class="texto_cruz">
                             <?php echo $nahual_destino_descripcion; ?>
                         </p>
