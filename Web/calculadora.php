@@ -87,6 +87,7 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
                     $haab_array = explode(" ", $haab);
                     $haab_nombre = $haab_array[0];
                     //El nombre solo se permiten letras
+                    $haab_nombre_original = $haab_nombre;
                     $haab_nombre = preg_replace('/[^a-zA-Z]/', '', $haab_nombre);
                     // Lo hacemos lowercase
                     $haab_nombre = strtolower($haab_nombre);
@@ -95,6 +96,7 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
                     $cholquij_array = explode(" ", $cholquij);
                     $cholquij_nombre = $cholquij_array[0];
                     //El nombre solo se permiten letras
+                    $cholquij_nombre_original = $cholquij_nombre;
                     $cholquij_nombre = preg_replace('/[^a-zA-Z]/', '', $cholquij_nombre);
                     // Lo hacemos lowercase
                     $cholquij_nombre = strtolower($cholquij_nombre);
@@ -107,62 +109,62 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
                                     <tr>
                                         <td colspan="2">
                                             <div class="images-container">
-                                                <img style="width: 400px; height: auto; object-fit: scale-down;" src="img/cuenta_larga/principal.png" alt="Superior Maya">
+                                                <img style="width: 400px; height: auto; object-fit: scale-down;" src="img/cuenta_larga/principal.png" alt="Superior Maya" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Cuenta Larga Maya">
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[0] ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/cuenta_larga/baktun.png" alt="Maya 1">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[0] ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Valor <?php echo $cuenta_larga_array[0] ?> del glifo Backtun">
+                                                <img class="maya_cal" src="img/cuenta_larga/baktun.png" alt="Maya 1" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Glifo Backtun a su lado izquiero el valor numerico de cuenta larga">
                                             </div>
                                         </td>
                                         <td>
                                             <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[1] ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/cuenta_larga/katun.png" alt="Maya 2">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[2] ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/cuenta_larga/tun.png" alt="Maya 1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[3] ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/cuenta_larga/unial.png" alt="Maya 2">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[1] ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Valor <?php echo $cuenta_larga_array[1] ?> del glifo Katun">
+                                                <img class="maya_cal" src="img/cuenta_larga/katun.png" alt="Maya 2" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Glifo Katun a su lado izquiero el valor numerico de cuenta larga">
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[4] ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/cuenta_larga/kin.png" alt="Maya 1">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[2] ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Valor <?php echo $cuenta_larga_array[2] ?> del glifo Tun">
+                                                <img class="maya_cal" src="img/cuenta_larga/tun.png" alt="Maya 1" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Glifo Tun a su lado izquiero el valor numerico de cuenta larga">
                                             </div>
                                         </td>
                                         <td>
                                             <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $cholquij_numero ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/nahuales/<?php echo $cholquij_nombre ?>.png" alt="Maya 2">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[3] ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Valor <?php echo $cuenta_larga_array[3] ?> del glifo Uinal">
+                                                <img class="maya_cal" src="img/cuenta_larga/unial.png" alt="Maya 2" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Glifo Uinal a su lado izquiero el valor numerico de cuenta larga">
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="images-container">
-                                                <img class="maya_num" src="img/numeros/<?php echo $haab_numero ?>.png" alt="Descripción">
-                                                <img class="maya_cal" src="img/uinales/<?php echo $haab_nombre ?>.png" alt="Maya 2">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cuenta_larga_array[4] ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Valor <?php echo $cuenta_larga_array[4] ?> del glifo Kin">
+                                                <img class="maya_cal" src="img/cuenta_larga/kin.png" alt="Maya 1" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Glifo Kin a su lado izquiero el valor numerico de cuenta larga">
                                             </div>
                                         </td>
                                         <td>
                                             <div class="images-container">
-                                                <img class="maya_cal" src="img/cuenta_larga/g<?php echo $senor_noche ?>.png" alt="Maya 2">
+                                                <img class="maya_num" src="img/numeros/<?php echo $cholquij_numero ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Energia <?php echo $cholquij_numero ?> del nahual <?php echo $cholquij_nombre_original ?>">
+                                                <img class="maya_cal" src="img/nahuales/<?php echo $cholquij_nombre ?>.png" alt="Maya 2" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Nahual <?php echo $cholquij_nombre_original ?> a su lado izquierdo su energia" >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_num" src="img/numeros/<?php echo $haab_numero ?>.png" alt="Descripción" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Valor <?php echo $haab_numero ?> del glifo <?php echo $haab_nombre_original ?> del calendario Haab">
+                                                <img class="maya_cal" src="img/uinales/<?php echo $haab_nombre ?>.png" alt="Maya 2" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Uinal <?php echo $haab_nombre_original ?> a su lado izquierdo el valor numerico del calendario Haab">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="images-container">
+                                                <img class="maya_cal" src="img/cuenta_larga/g<?php echo $senor_noche ?>.png" alt="Maya 2" class="custom-tooltip" data-toggle="tooltip" data-placement="top" title="Señor de la noche G<?php echo $senor_noche ?>">
                                             </div>
                                         </td>
                                     </tr>
@@ -177,7 +179,11 @@ $senor_noche = ((20 * $x + $y + 8) % 9 + 1);
         <br>
     </div>
 
-
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <?php include "blocks/bloquesJs1.html" ?>
 
 </body>

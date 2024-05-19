@@ -290,3 +290,12 @@
     }
 }
 
+.custom-tooltip .tooltip-inner {
+    background-color: #555; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+.custom-tooltip .arrow::before {
+    border-top-color: #555; /* Color de la flecha */
+}
