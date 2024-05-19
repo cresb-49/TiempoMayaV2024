@@ -15,7 +15,7 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
   </a>
 </div>
 
-<header id="header" style="padding-left: 600px;">
+<header class="header">
   <div class="container">
     <nav class="navbar navbar-expand-lg" id="nav-menu-container">
       <div class="container-fluid">
