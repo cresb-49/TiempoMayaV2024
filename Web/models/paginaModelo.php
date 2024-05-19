@@ -28,7 +28,7 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 
 <body>
     <section id="inicio">
-    
+
         <div id="inicioContainer" class="inicio-container">
 
             <?php echo "<h1>" . $pagina . " </h1>";
