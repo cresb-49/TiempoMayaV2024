@@ -47,7 +47,7 @@
   }
   
 .fileuploader-input-caption{
-    color: #2dc997;
+    color: #c9592d;
 }
 
 .fileuploader {
@@ -55,8 +55,8 @@
 }
 
  .fileuploader-input-button:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+    background: #c9592d;
+    border: 2px solid #c9592d;
   }
   
   @media (max-width:994px){

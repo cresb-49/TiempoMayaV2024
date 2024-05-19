@@ -1,0 +1,94 @@
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* Asegura columnas de igual ancho */
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #1f1f1f;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #c9592d;
+    /* Semi-transparente */
+}
+
+.calendar caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-day {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio debajo de cada día para separación */
+}
+
+.images-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten según el ancho del contenedor */
+}
+
+.maya_cal, .maya_num {
+    margin-right: 5px; /* Espacio entre imágenes */
+    margin-bottom: 5px; /* Espacio debajo de las imágenes */
+    width: 40px; /* Ancho fijo para cada imagen, ajusta según necesites */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.maya_num {
+    transform: rotate(-90deg); /* Rotar 90 grados a la izquierda */
+    width: 30px; /* Ancho fijo para cada imagen, ajusta según necesites */
+    object-fit: scale-down; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.text-below {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    margin-top: 5px; /* Espacio entre imágenes y texto */
+}
+
+.calendar-container{
+    /* Agregar un espacio al extremo derecho e izquierdo del contenedor */
+    padding: 0 2%;
+}
+
+.selector-fecha select, .selector-fecha button {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+    border: 1px solid #666; /* Borde sutil */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Margen externo */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto */
+}
+
+.selector-fecha select:hover, .selector-fecha button:hover {
+    background-color: #555; /* Cambio de color al pasar el mouse */
+}
+
+.selector-fecha button {
+    cursor: pointer; /* Cursor en forma de mano para indicar que es clickeable */
+}
+
+/* Estilo adicional para el formulario y su contenedor */
+.selector-fecha {
+    display: flex; /* Alineación en línea */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Ajustar el tamaño de los selectores si es necesario */
+.selector-fecha select {
+    width: auto; /* O ajusta según el espacio disponible */
+}
+
+/* Estilo del botón 'Calcular' */
+.selector-fecha button {
+    font-weight: bold; /* Texto en negrita */
+}

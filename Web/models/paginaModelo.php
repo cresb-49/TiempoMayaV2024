@@ -28,13 +28,16 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 
 <body>
     <section id="inicio">
-    <video src="../img/background.mp4" autoplay="true" muted="true" loop="true"></video>
+    
         <div id="inicioContainer" class="inicio-container">
 
             <?php echo "<h1>" . $pagina . " </h1>";
             ?>
             <img class="imagenElemento3" alt="" src="../img/logonew3.png">
-            <img class="imagenElemento2" alt="" src="../img/flecha.png">
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 20px;">Consulta Abajo</h1>
         </div>
     </section>
     <br><br><br><br>

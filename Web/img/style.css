@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #2dc997;
+  color: #c9592d;
 }
 
 a:hover, a:active, a:focus {
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: color: #2dc997;
+  color: color: #c9592d;
 }
 
 
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #2dc997;
+  background: #c9592d;
   color: #fff;
 }
 
@@ -164,8 +164,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #inicio .btn-get-started:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #c9592d;
+  border: 2px solid #c9592d;
 }
 
 
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2dc997;
+  background-color: #c9592d;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li a:hover {
-  background: #2dc997;
+  background: #c9592d;
   color: #fff;
 }
 

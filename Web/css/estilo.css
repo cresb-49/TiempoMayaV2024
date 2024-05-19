@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color: #2dc997;
+    color: #c9592d;
 }
 
 button.navbar-toggler:focus {
@@ -15,7 +15,7 @@ button.navbar-toggler:focus {
 a:hover,
 a:active,
 a:focus {
-    color: #2dca98;
+    color: #c96d49;
     outline: none;
     text-decoration: none;
     transition: 0.5s;
@@ -37,7 +37,7 @@ h6 {
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
-    color: #2dc997;
+    color: #c9592d;
 }
 
 .back-to-top {
@@ -70,7 +70,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #2dc997;
+    background: #c9592d;
     color: #fff;
 }
 
@@ -88,8 +88,8 @@ h6 {
 
 #header.header-fixed {
     background: #191919;
-    color: #00c989;
-    border-bottom: 1px solid #00c989;
+    color: #cc3a00;
+    border-bottom: 1px solid #cc3a00;
     padding: 20px 0;
     height: 78px;
     transition: all 0.5s;
@@ -112,15 +112,11 @@ h6 {
     background: url(../img/fondo.png) top center;
     background-size: cover;
     position: relative;
-    z-index: -2;
+    z-index: 1;
 }
 
 video {
-    position: absolute;
-    max-height: 109%;
-    min-width: 99%;
-    min-height: 100%;
-    z-index: -1;
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -226,8 +222,8 @@ video {
 }
 
 #inicio .btn-get-started:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+    background: #c9592d;
+    border: 2px solid #c9592d;
     color: #fff;
 }
 
@@ -332,7 +328,7 @@ video {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #2dc997;
+    background-color: #c9592d;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -371,7 +367,7 @@ video {
 }
 
 .nav-menu ul li a:hover {
-    background: #2dc997;
+    background: #c9592d;
     color: #fff;
 }
 
@@ -381,7 +377,7 @@ video {
 
 .section-header .section-title {
     font-size: 32px;
-    color: #2dc997;
+    color: #c9592d;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
